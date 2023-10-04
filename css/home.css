@@ -10,12 +10,11 @@ header{
     height: 8vh;
     background-color: #011833;
     border-bottom: 2px solid lime;
-    /* background: linear-gradient(45deg, #011833, #311538); */
 }
 
 main {
     width: 100%;
-    height: 100vh;
+    height: 92vh;
     display: flex;
     flex-direction: column;
     background-color: #011833;
@@ -38,8 +37,6 @@ main {
     align-items: center;
     justify-content: center;
     border-radius: 10px;
-    /* border: 2px solid lime; */
-    /* background-color: white; */
     background: linear-gradient(45deg, rgb(50, 50, 255),rgb(255, 50, 50));
     text-decoration: none;
 }
@@ -55,7 +52,7 @@ button{
 .contenedor-home{
     margin-top: 2px;
     width: 100%;
-    height: 80vh;
+    height: 92vh;
     display: flex;
     flex-direction: column;
     align-items: center; 
@@ -64,7 +61,6 @@ button{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; 
-    border-bottom: 2px solid lime;
 } 
 
 .contenedor-des{
@@ -82,7 +78,6 @@ button{
     height: 40vh;
     display: flex;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.805);
     border-radius: 10px; 
 }
 
@@ -108,8 +103,15 @@ button{
     justify-content: space-around;
     height: auto;
     width: auto;
-    color: black;
+    color: white;
     font-size: 30px;
+}
+
+.titulo a{
+    width: 100%;
+    height: 100%;
+    background: none;
+    text-decoration: none;
 }
 
 h1{
@@ -117,15 +119,14 @@ h1{
 }
 
 .titulodes{
-    margin-bottom: 50px;
     font-size: 40px;
     color: white;
 }
 
 .texto-des{
-    margin-left: 20px;
     font-size: 30px;
-    color: black;
+    text-align: center;
+    color: white;
 } 
 
 .imgs img{
@@ -136,3 +137,16 @@ h1{
 .texts p{
     margin-left: 20px;
 } 
+
+.iconos{
+    width: 35vw;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.iconos img{
+    width: 50px;
+    height: 50px;
+}

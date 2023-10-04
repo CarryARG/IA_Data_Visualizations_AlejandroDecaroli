@@ -3,9 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/css/analitic.css">
+    <title>Análisis de datos y visualizador</title>
 </head>
 <body>
-    
-</body>
-</html>
+    <header>
+        <div class="contenedormenu">
+            <div class="titulo">
+                <a href="home.html">
+                    <h1>IA Data & Visualizations</h1>
+                </a>
+            </div>
+            <a href="ia.html">
+                <button type="button">IA</button>
+            </a> 
+            <a href="analitic.html">
+                <button type="button">Analizar datos</button>
+            </a> 
+            <a href="soporte.html">
+                <button type="button">Tutoriales</button>
+            </a>
+            <a href="donacion.html">
+                <button type="button">Donacion</button>
+            </a>
+        </div>
+
+    </header>
+    <main>
+        <div class="contenedor_de_archivos">
+
+        </div>
+        <div class="lugar_de_trabajo">
+            <div class="contenedor_parametros">
+                <form id="sumForm">
+                    <label for="num1">Número 1:</label>
+                    <input type="number" id="num1" name="num1" required>
+                    <br>
+                    <label for="num2">Número 2:</label>
+                    <input type="number" id="num2" name="num2" required>
+                    <br>
+                    <input type="submit" value="Calcular Suma">
+                </form>
+                <p>Resultado: <span id="result"></span></p>
+                <script src="/javascript/analitic.js"></script>
+            </div>
+            <div class="contenedor_resumen">
+                
+            </div>
+        </div>        
+    </main>
