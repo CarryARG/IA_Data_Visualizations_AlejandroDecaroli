@@ -58,13 +58,13 @@ main{
 .lugar_de_trabajo{
     width: 100%;
     height: 100%;
-    background-color: aqua;
+
 }
 
 .contenedor_de_archivos{
     width: 25%;
     height: 100%;
-    background-color: blue;
+  
 }
 
 h1{

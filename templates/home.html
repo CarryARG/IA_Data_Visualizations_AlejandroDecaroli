@@ -3,27 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css')}}">
     <title>Análisis de datos y visualizador</title>
 </head>
 <body>
     <header>
         <div class="contenedormenu">
             <div class="titulo">
-                <a href="home.html">
+                <a href="{{ url_for('home') }}">
                     <h1>IA Data & Visualizations</h1>
                 </a>
             </div>
-            <a href="ia.html">
+            <a href="{{ url_for('ia') }}">
                 <button type="button">IA</button>
             </a> 
-            <a href="analitic.html">
+            <a href="{{ url_for('analizar_datos') }}">
                 <button type="button">Analizar datos</button>
             </a> 
-            <a href="soporte.html">
+            <a href="{{ url_for('tutoriales') }}">
                 <button type="button">Tutoriales</button>
             </a>
-            <a href="donacion.html">
+            <a href="{{ url_for('donacion') }}">
                 <button type="button">Donacion</button>
             </a>
         </div>
@@ -40,19 +40,19 @@
             </div>
             <div class="iconos">
                 <a href="">
-                    <img src="/css/assets/facebook.png" alt="icono">
+                    <img src="/static/css/assets/facebook.png" alt="icono">
                 </a>
                 <a href="">
-                    <img src="/css/assets/facebook.png" alt="icono">
+                    <img src="/static/css/assets/facebook.png" alt="icono">
                 </a>
                 <a href="">
-                    <img src="/css/assets/linkedin.png" alt="icono">
+                    <img src="/static/css/assets/linkedin.png" alt="icono">
                 </a>
                 <a href="">
-                    <img src="/css/assets/instagram.png" alt="icono">
+                    <img src="/static/css/assets/instagram.png" alt="icono">
                 </a>
                 <a href="">
-                    <img src="/css/assets/youtube.png" alt="icono">
+                    <img src="/static/css/assets/youtube.png" alt="icono">
                 </a>
             </div>
         </div>

@@ -3,35 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/analitic.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/analitic.css') }}">
     <title>Análisis de datos y visualizador</title>
 </head>
 <body>
     <header>
         <div class="contenedormenu">
             <div class="titulo">
-                <a href="home.html">
+                <a href="{{ url_for('home') }}">
                     <h1>IA Data & Visualizations</h1>
                 </a>
             </div>
-            <a href="ia.html">
+            <a href="{{ url_for('ia') }}">
                 <button type="button">IA</button>
             </a> 
-            <a href="analitic.html">
+            <a href="{{ url_for('analizar_datos') }}">
                 <button type="button">Analizar datos</button>
             </a> 
-            <a href="soporte.html">
+            <a href="{{ url_for('tutoriales') }}">
                 <button type="button">Tutoriales</button>
             </a>
-            <a href="donacion.html">
+            <a href="{{ url_for('donacion') }}">
                 <button type="button">Donacion</button>
             </a>
         </div>
-
+        
     </header>
     <main>
         <div class="contenedor_de_archivos">
-
+            
         </div>
         <div class="lugar_de_trabajo">
             <div class="contenedor_parametros">
@@ -45,10 +45,12 @@
                     <input type="submit" value="Calcular Suma">
                 </form>
                 <p>Resultado: <span id="result"></span></p>
-                <script src="/javascript/analitic.js"></script>
+            
+                <script src="{{ url_for('static', filename='javascript/analitic.js') }}"></script>
             </div>
             <div class="contenedor_resumen">
                 
             </div>
         </div>        
     </main>
+</body>
